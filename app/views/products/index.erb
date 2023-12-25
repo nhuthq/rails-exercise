@@ -1,0 +1,20 @@
+<h1 class="title-left">List Products</h1>
+<table>
+  <tr>
+    <th>Product Title</th>
+    <th>Price</th>
+    <th>Status</th>
+    <th>Category</th>
+  </tr>
+  <% @products.each do |item| %>
+    <tr>
+      <td><%= item.title %></td>
+      <td><%= item.price %></td>
+      <td><%= item.published %></td>
+      <td><%= item.category.title %></td>
+      <td><%= link_to('Read more', product_path(item)) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to('Create', new_product_path) %>

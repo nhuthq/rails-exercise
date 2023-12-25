@@ -1,0 +1,9 @@
+<h1 class="title-left">New Product</h1>
+<%= simple_form_for @product do |f| %>
+  <%= f.input :title, label: 'Title', placeholder: 'Book', required: true %>
+  <%= f.input :description, label: 'Description', placeholder: 'Note', required: false  %>
+  <%= f.input :price, label: 'Price', placeholder: '1.00', input_html: { min: '0', step: 'any' } %>
+  <%= f.input :published, label: 'Published', :input_html => { :checked => true } %>
+  <%= f.input :category_id, label: 'Category', :collection => @categories, required: true %>
+  <%= f.button :submit %>
+<% end %>
