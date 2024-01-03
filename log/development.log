@@ -4140,3 +4140,327 @@ No template found for ProductsController#create, rendering head :no_content
 Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 441)
 
 
+Started GET "/products" for ::1 at 2023-12-26 08:22:32 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`published` = TRUE[0m
+  ↳ app/views/products/index.erb:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  Rendered products/index.erb within layouts/application (Duration: 23.0ms | Allocations: 26903)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 63124)
+Completed 200 OK in 68ms (Views: 46.8ms | ActiveRecord: 7.5ms | Allocations: 75934)
+
+
+Started GET "/products" for ::1 at 2023-12-26 08:23:54 +0700
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`published` = TRUE[0m
+  ↳ app/views/products/index.erb:9
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  Rendered products/index.erb within layouts/application (Duration: 14.6ms | Allocations: 14012)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 27673)
+Completed 200 OK in 25ms (Views: 16.8ms | ActiveRecord: 6.7ms | Allocations: 30091)
+
+
+Started GET "/" for ::1 at 2023-12-26 08:23:57 +0700
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`published` = TRUE[0m
+  ↳ app/views/products/index.erb:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  Rendered products/index.erb within layouts/application (Duration: 11.0ms | Allocations: 4761)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 6915)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.7ms | Allocations: 7205)
+
+
+Started GET "/" for ::1 at 2023-12-26 08:24:10 +0700
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`published` = TRUE[0m
+  ↳ app/views/products/index.erb:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  Rendered products/index.erb within layouts/application (Duration: 10.5ms | Allocations: 4760)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6920)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.7ms | Allocations: 7209)
+
+
+Started GET "/" for ::1 at 2023-12-26 08:24:12 +0700
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`published` = TRUE[0m
+  ↳ app/views/products/index.erb:9
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  Rendered products/index.erb within layouts/application (Duration: 19.2ms | Allocations: 4755)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 6927)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 1.0ms | Allocations: 7210)
+
+
+Started GET "/products/new" for ::1 at 2023-12-26 08:24:15 +0700
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/views/products/new.erb:7
+  Rendered products/new.erb within layouts/application (Duration: 17.5ms | Allocations: 5644)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 7581)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.5ms | Allocations: 7953)
+
+
+Started GET "/products/9" for ::1 at 2023-12-26 08:24:41 +0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.erb within layouts/application
+  Rendered products/show.erb within layouts/application (Duration: 0.9ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2357)
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 0.7ms | Allocations: 4430)
+
+
+Started GET "/products/new" for ::1 at 2023-12-26 08:29:32 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/views/products/new.erb:7
+  Rendered products/new.erb within layouts/application (Duration: 12.6ms | Allocations: 9265)
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 43981)
+Completed 200 OK in 93ms (Views: 59.0ms | ActiveRecord: 7.2ms | Allocations: 68370)
+
+
+Started POST "/products" for ::1 at 2023-12-26 08:29:42 +0700
+Processing by ProductsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"title"=>"abc", "description"=>"", "price"=>"5", "published"=>"0", "category_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ (pry):2:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  Rendering products/new.erb
+  Rendered products/new.erb (Duration: 4.6ms | Allocations: 3131)
+Completed 200 OK in 33762ms (Views: 6.2ms | ActiveRecord: 0.9ms | Allocations: 55758)
+
+
+  [1m[36mProduct Count (4.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `products`[0m
+Started GET "/products/new" for ::1 at 2023-12-26 08:31:01 +0700
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/views/products/new.erb:7
+  Rendered products/new.erb within layouts/application (Duration: 6.6ms | Allocations: 5735)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 19117)
+Completed 200 OK in 22ms (Views: 9.8ms | ActiveRecord: 8.4ms | Allocations: 25156)
+
+
+Started POST "/products" for ::1 at 2023-12-26 08:31:10 +0700
+Processing by ProductsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"title"=>"nhut", "description"=>"", "price"=>"5", "published"=>"1", "category_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  Rendering products/new.erb
+  Rendered products/new.erb (Duration: 4.8ms | Allocations: 2986)
+Completed 200 OK in 18ms (Views: 7.4ms | ActiveRecord: 2.0ms | Allocations: 9753)
+
+
+Started GET "/products/new" for ::1 at 2023-12-26 08:31:20 +0700
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/views/products/new.erb:7
+  Rendered products/new.erb within layouts/application (Duration: 4.7ms | Allocations: 3087)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5009)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 5280)
+
+
+Started POST "/products" for ::1 at 2023-12-26 08:31:28 +0700
+Processing by ProductsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"title"=>"abc", "description"=>"abc", "price"=>"5", "published"=>"1", "category_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  [1m[36mProduct Create (4.7ms)[0m  [1m[32mINSERT INTO `products` (`title`, `description`, `created_at`, `updated_at`, `price`, `published`, `category_id`) VALUES ('abc', 'abc', '2023-12-26 01:31:28.315208', '2023-12-26 01:31:28.315208', 5.0, TRUE, 1)[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:29:in `create'
+Redirected to http://localhost:3000/products
+Completed 302 Found in 23ms (ActiveRecord: 7.3ms | Allocations: 4926)
+
+
+Started GET "/products" for ::1 at 2023-12-26 08:31:28 +0700
+Processing by ProductsController#index as TURBO_STREAM
+  Rendering products/index.erb
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`published` = TRUE[0m
+  ↳ app/views/products/index.erb:9
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  Rendered products/index.erb (Duration: 8.3ms | Allocations: 5626)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.7ms | Allocations: 6077)
+
+
+  [1m[36mProduct Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `products`[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Destroy (0.6ms)[0m  [1m[31mDELETE FROM `products` WHERE `products`.`id` = 12[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/products/new" for ::1 at 2023-12-26 08:32:01 +0700
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/views/products/new.erb:7
+  Rendered products/new.erb within layouts/application (Duration: 5.6ms | Allocations: 5790)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 19171)
+Completed 200 OK in 22ms (Views: 10.9ms | ActiveRecord: 7.1ms | Allocations: 25167)
+
+
+Started POST "/products" for ::1 at 2023-12-26 08:34:01 +0700
+Processing by ProductsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"title"=>"abc", "description"=>"abc", "price"=>"5", "published"=>"1", "category_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:28:in `create'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:28:in `create'
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO `products` (`title`, `description`, `created_at`, `updated_at`, `price`, `published`, `category_id`) VALUES ('abc', 'abc', '2023-12-26 01:34:01.271299', '2023-12-26 01:34:01.271299', 5.0, TRUE, 1)[0m
+  ↳ app/controllers/products_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:28:in `create'
+Redirected to http://localhost:3000/products
+Completed 302 Found in 13ms (ActiveRecord: 1.9ms | Allocations: 6368)
+
+
+Started GET "/products" for ::1 at 2023-12-26 08:34:01 +0700
+Processing by ProductsController#index as TURBO_STREAM
+  Rendering products/index.erb
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`published` = TRUE[0m
+  ↳ app/views/products/index.erb:9
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/products/index.erb:14
+  Rendered products/index.erb (Duration: 9.0ms | Allocations: 5581)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.6ms | Allocations: 6237)
+
+

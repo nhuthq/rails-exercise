@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 
   def show
     @item = Product.find(params[:id])
-    # Display a production with full informaion
+    # Display a production with full details
   end
 
   def new
@@ -43,7 +43,6 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    # De
-    # stroy a product in Database
+    # Destroy a product in Database
   end
 end
